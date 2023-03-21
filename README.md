@@ -41,7 +41,7 @@ S3bucket_node3 = glueContext.write_dynamic_frame.from_options(
     frame=ApplyMapping2_node,
     connection_type="s3",
     format="json",
-    connection_options={"path": "<s3경로>", "partitionKeys": []},
+    connection_options={"path": "s3경로", "partitionKeys": []},
     transformation_ctx="S3bucket_node3",
 )
 
