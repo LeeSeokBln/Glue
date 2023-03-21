@@ -1,3 +1,4 @@
+Glue ETL을 사용하려면 데이터가 저장 될 데이터베이스 테이블이 필요하기 때문에, job을 생성하기 전 크롤러와 데이터베이스를 생성한후 크롤러를 실행 시켜 테이블을 생성하여야 한다.
 # ETL로 데이터 변환하기 예시코드
 ```
 import sys
@@ -48,4 +49,3 @@ S3bucket_node3 = glueContext.write_dynamic_frame.from_options(
 job.commit()
 
 ```
-Glue ETL을 사용하려면 데이터가 저장 될 데이터베이스 테이블이 필요하기 때문에, job을 생성하기 전 크롤러와 데이터베이스를 생성한후 크롤러를 실행 시켜 테이블을 생성하여야 한다.
