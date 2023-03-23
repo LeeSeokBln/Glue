@@ -1,6 +1,6 @@
 Glue ETL을 사용하려면 데이터가 저장 될 데이터베이스 테이블이 필요하기 때문에, job을 생성하기 전 크롤러와 데이터베이스를 생성한후 크롤러를 실행 시켜 테이블을 생성하여야 한다.
 # ETL로 데이터 변환 예제 코드
-이름을 대문자로 바꾸고 parquet형식으로 저장
+이름을 대문자로 바꾸고 parquet형식으로 저장하는 코드
 ```
 import sys
 from awsglue.transforms import *
